@@ -1,0 +1,61 @@
+<Touch>:
+    btn: btn
+    btn1: work
+    btn2: pls
+    btn3: help
+    id: main_win
+    orientation: "vertical"
+    spacing: 10
+    space_x: self.size[0]/3
+
+
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        Rectangle:
+            source:'PLAY (2).png'
+            size: root.width, root.height
+            pos: self.pos
+
+
+    Button:
+        id:btn
+        text:"On"
+        font_name: "AZONIX.otf"
+        font_size: 40
+        background_down: "button (1).png"
+        background_normal: "button (2).png"
+        pos: (96, 121)
+        size:  (332.5, 100)
+
+    Button:
+        id:work
+        text:"Mute"
+        font_name: "AZONIX.otf"
+        font_size: 40
+        background_down: "button (1).png"
+        background_normal: "button (2).png"
+        #on_press: root.mutething(app.audio)
+        pos: (96, 234)
+        size:  (332.5, 100)
+
+    Button:
+        id:pls
+        text:"Normal Mode"
+        font_name: "AZONIX.otf"
+        font_size: 37
+        background_down: "button (1).png"
+        background_normal: "button (2).png"
+        pos: (96, 361)
+        size:  (332.5, 100)
+
+    Button:
+        id:help
+        text: "Music Mode"
+        font_name: "AZONIX.otf"
+        background_down: "button (1).png"
+        background_normal: "button (2).png"
+        font_size: 40
+        pos: (96, 483)
+        size:  (332.5, 100)
+
